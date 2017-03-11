@@ -14,7 +14,7 @@
 #     render body: nil, status: 304
 #   end
 # end
-class HerCacheUnmodified < Faraday::Middleware
+class Her::Middleware::CacheUnmodified < Faraday::Middleware
   SAVE_METHODS = [:get, :head].freeze
 
   attr_reader :cache, :options

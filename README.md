@@ -13,7 +13,7 @@ At the very begonning you have to include this middleware to `Her`
 ...
   Her::API.new.setup do |connection|
     ...
-    connection.use HerCacheUnmodified
+    connection.use Her::Middleware::CacheUnmodified
   end
 ```  
 
